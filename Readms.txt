@@ -1,0 +1,5 @@
+necessary dependency
+
+npm create vite@latest ./ -- --template
+npm install
+npm install -D tailwindcss postcss autoprefixer
