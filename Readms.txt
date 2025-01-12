@@ -4,3 +4,4 @@ npm create vite@latest ./ -- --template
 npm install
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
+npm install react-icons
