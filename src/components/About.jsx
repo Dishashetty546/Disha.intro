@@ -1,6 +1,6 @@
 import React from 'react'
 import { ABOUT_TEXT } from '../constants'
-
+import about from '../assets/projects/About.jpg'
 const About = () => {
   return (
    
@@ -9,7 +9,12 @@ const About = () => {
 <div className='flex flex-wrap'>
     <div className='w-full lg:w-1/2 lg:p-8'>
     <div className='flex items-center justify-center'>
-        <img className='rounded-2xl' src="" alt="" />
+    <img 
+  className="w-60 h-60 lg:w-64 lg:h-64 rounded-2xl object-cover" 
+  src={about} 
+  alt="" 
+/>
+
         </div>
         </div>
         <div className='w-full  lg:w-1/2'>
