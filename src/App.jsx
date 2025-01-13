@@ -2,7 +2,11 @@ import Navbar from './components/navbar';
 import Hero from './components/Hero.jsx';
 import About from './components/About.jsx';
 import Technologies from './components/Technologies.jsx';
+import Experience from './components/Experience.jsx';
+import Projects from './components/Projects.jsx'
+import Contacts from './components/Contacts.jsx'
 const App = () => {
+
   return (
     <div className="relative min-h-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
       {/* Navbar */}
@@ -13,6 +17,9 @@ const App = () => {
         <Hero />
         <About />
         <Technologies/>
+        <Experience/>
+        <Projects/>
+        <Contacts/>
       </div>
     </div>
   );
