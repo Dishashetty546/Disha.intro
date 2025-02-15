@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { HERO_CONTENT } from '../constants/index.js';
 import Disha from '../assets/Disha.jpg';
+import DishaResume from '../assets/Disha_Resume.pdf'; // Import the resume file
 
 const Hero = () => {
   const roles = [
@@ -27,23 +28,28 @@ const Hero = () => {
               Disha
             </h1>
             <span
-              className={`text-4xl font-semibold tracking-tight ${
-                roles[currentRoleIndex].color
-              }`}
+              className={`text-4xl font-semibold tracking-tight ${roles[currentRoleIndex].color}`}
             >
               {roles[currentRoleIndex].text}
             </span>
             <p className="my-2 max-w-xl py-6 font-light tracking-tighter text-white">
               {HERO_CONTENT}
             </p>
+            {/* Resume Download Button */}
+            <a
+              href={DishaResume}
+              download="Disha_Resume.pdf"
+              className="mt-4 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
+            >
+              Download Resume
+            </a>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center">
-            {/* Add dimensions to the image */}
             <img
               src={Disha}
-              alt=""
+              alt="Disha"
               className="w-80 h-80 lg:w-64 lg:h-64 object-cover rounded-full"
             />
           </div>
