@@ -11,7 +11,7 @@ export const EXPERIENCES = [
     role: "Mentor - Data Structures & Web Development",
     company: "Sahyadri College of Engineering, Mangalore",
     description:
-      "Led a team of 3-4 mentors to guide and mentor 100+ junior students in Data Structures & Algorithms, Git, and the fundamentals of Web Development. Conducted interactive sessions, hands-on coding exercises, and project-based learning. Successfully organized an Ideathon and Hackathon, encouraging students to apply their knowledge in real-world problem-solving.",
+      "Led a team of 3-4 mentors to guide and mentor 100+ junior students in Data Structures & Algorithms, Git, and the fundamentals of Web Development and project-based learning.Encouraging students to apply their knowledge in real-world problem-solving.",
     technologies: [
       "Leadership",
       "Mentorship",
@@ -28,29 +28,29 @@ export const PROJECTS = [
     title: "Mediflow",
     image: proj1,
     description:
-      "An application designed for doctors and patient for Doctor appointment management system with online payment optimization",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "A doctor appointment and multiple disease prediction application developed using the MERN stack and Machine Learning. It includes features like JWT-secured login authentication, an interactive doctor and patient dashboard, doctor-patient appointment scheduling, payment integration, and a productivity-boosting multiple disease prediction system with a medicine recommendation engine.",
+    technologies: ["MERN Stack", "Machine Learning", "JWT", "Stripe Payment"],
+  },
+  {
+    title: "Eduford",
+    image: project3,
+    description:
+      "An AI-integrated mock interview platform with feedback analysis. It evaluates test performance on topics like data structures and algorithms, identifying weak and strong areas. For example, if a person is weak in arrays but strong in strings, it provides detailed feedback to help improve weak areas.",
+    technologies: ["MERN Stack", "Machine Learning", "AI Feedback Analysis"],
   },
   {
     title: "Corporate",
-    image: project2,
+    image: project4,
     description:
-      "An application for managing tasks and projects of employees, admin can assign and check the progress of employee, employee details,attendance are maintained",
-    technologies: ["SQL", "CSS", "React", "Node.js", "Express"],
+      "An employee database management system built with React, Node.js, and SQL. It features a responsive employee and admin dashboard where admins can assign tasks, track progress, and manage employee details, including attendance.",
+    technologies: ["React", "Node.js", "Express", "SQL"],
   },
   {
     title: "Disha.intro",
-    image: project3,
+    image: project2, // Replace with actual image path
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Tailwindcss"],
-  },
-  {
-    title: "Blogging Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "A personal portfolio website designed using React and Tailwind CSS. It showcases projects, skills, and contact information with a clean and responsive UI.",
+    technologies: ["React", "Tailwind CSS"],
   },
 ];
 
