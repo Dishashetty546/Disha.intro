@@ -8,8 +8,8 @@ export const ABOUT_TEXT = `I am a passionate Computer Science student with exper
 export const EXPERIENCES = [
   {
     year: "Oct-2024",
-    role: "Mentor - Data Structures & Web Development",
-    company: "Sahyadri College of Engineering, Mangalore",
+    role: "Mentor",
+    company: "SOSC (Sahyadri Open Source Community)",
     description:
       "Led a team of 3-4 mentors to guide and mentor 100+ junior students in Data Structures & Algorithms, Git, and the fundamentals of Web Development and project-based learning.Encouraging students to apply their knowledge in real-world problem-solving.",
     technologies: [
@@ -30,6 +30,8 @@ export const PROJECTS = [
     description:
       "A doctor appointment and multiple disease prediction application developed using the MERN stack and Machine Learning. It includes features like JWT-secured login authentication, an interactive doctor and patient dashboard, doctor-patient appointment scheduling, payment integration, and a productivity-boosting multiple disease prediction system with a medicine recommendation engine.",
     technologies: ["MERN Stack", "Machine Learning", "JWT", "Stripe Payment"],
+    github: "https://github.com/Dishashetty546/mediflow-.git",
+    demo: "https://your-mediflow-live-link.com", // Replace if you have a real live demo
   },
   {
     title: "Eduford",
@@ -37,6 +39,8 @@ export const PROJECTS = [
     description:
       "An AI-integrated mock interview platform with feedback analysis. It evaluates test performance on topics like data structures and algorithms, identifying weak and strong areas. For example, if a person is weak in arrays but strong in strings, it provides detailed feedback to help improve weak areas.",
     technologies: ["MERN Stack", "Machine Learning", "AI Feedback Analysis"],
+    github: "https://github.com/Dishashetty546/Eduford.git",
+    demo: "https://your-eduford-live-link.com", // Replace if deployed
   },
   {
     title: "Corporate",
@@ -44,13 +48,17 @@ export const PROJECTS = [
     description:
       "An employee database management system built with React, Node.js, and SQL. It features a responsive employee and admin dashboard where admins can assign tasks, track progress, and manage employee details, including attendance.",
     technologies: ["React", "Node.js", "Express", "SQL"],
+    github: "https://github.com/yourusername/corporate", // Optional placeholder
+    demo: "https://your-corporate-demo.com", // Optional placeholder
   },
   {
-    title: "Disha.intro",
+    title: "Portfolio Website",
     image: project2, // Replace with actual image path
     description:
       "A personal portfolio website designed using React and Tailwind CSS. It showcases projects, skills, and contact information with a clean and responsive UI.",
     technologies: ["React", "Tailwind CSS"],
+    github: "https://github.com/Dishashetty546/portfolio-website.git",
+    demo: "https://your-portfolio-site.com", // Replace if live
   },
 ];
 

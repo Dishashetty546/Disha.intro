@@ -14,12 +14,15 @@ const Projects = () => {
       <div className="space-y-10">
         {displayedProjects && displayedProjects.length > 0 ? (
           displayedProjects.map((project, index) => (
-            <div key={index} className="flex flex-wrap lg:items-start lg:justify-center bg-neutral-800 p-6 rounded-lg shadow-md">
+            <div
+              key={index}
+              className="flex flex-wrap lg:items-start lg:justify-center bg-neutral-800 p-6 rounded-lg shadow-md"
+            >
               {/* Image Section */}
               <div className="w-full lg:w-1/4 mb-4 lg:mb-0 lg:mr-8 flex justify-center">
                 <img
                   src={project.image}
-                  alt={project.title || "Project Image"}
+                  alt={project.title || 'Project Image'}
                   width={150}
                   height={150}
                   className="rounded-lg object-cover shadow-lg"
@@ -43,7 +46,7 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {/* GitHub & Live Demo Buttons */}
+                {/* GitHub & (Conditional) Live Demo Buttons */}
                 <div className="flex justify-center lg:justify-start space-x-4">
                   <a
                     href={project.github}
@@ -53,14 +56,18 @@ const Projects = () => {
                   >
                     GitHub
                   </a>
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 border border-blue-500 text-blue-500 rounded-lg hover:bg-blue-500 hover:text-white transition"
-                  >
-                    Live Demo
-                  </a>
+
+                  {/* Only show Live Demo for Portfolio Website */}
+                  {project.title === 'Portfolio Website' && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 border border-blue-500 text-blue-500 rounded-lg hover:bg-blue-500 hover:text-white transition"
+                    >
+                      Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
@@ -69,8 +76,9 @@ const Projects = () => {
           <p className="text-gray-400 text-center">No projects to display.</p>
         )}
       </div>
-{/* "View More" Button */}
-{!showAll && PROJECTS.length > 3 && (
+
+      {/* "View More" Button */}
+      {!showAll && PROJECTS.length > 3 && (
         <div className="text-center mt-6">
           <button
             onClick={() => setShowAll(true)}
